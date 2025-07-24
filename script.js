@@ -102,9 +102,10 @@ function mostrarCombos(tipo) {
       const cardBody = document.createElement("div");
       cardBody.className = "card-body";
 
-      const titulo = document.createElement("h5");
+      const titulo = document.createElement("h4");
       titulo.className = "card-title";
       titulo.textContent = dato.Combo;
+      titulo.style.fontWeight="Bold"
 
       const contenido = document.createElement("strong");
       contenido.className = "contenido";
