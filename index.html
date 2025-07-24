@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo Virtual</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="Imagenes/Logo.jpg" type="image/x-icon" />
+    <!-- o si usas PNG -->
+    <link rel="icon" href="ruta/a/tu-imagen.png" type="image/png" />
+
+    <style>
+      body {
+        background: linear-gradient(135deg, #011d4d 15%, #10049b 45%, black);
+        color: #333333; /* texto oscuro para buena legibilidad */
+        min-height: 100vh;
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .card:hover {
+        cursor: pointer;
+      }
+
+      .container {
+        padding-top: 40px; /* suficiente espacio para escritorio */
+        padding-bottom: 30px;
+      }
+      button {
+        margin: 20px;
+      }
+      @media (max-width: 991.98px) {
+        body {
+          padding-top: 10px; /* ajusta el valor si quieres más separación */
+        }
+      }
+      .card {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.card.fade-out {
+  opacity: 0;
+}
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body id="inicio">
+    <nav class="navbar navbar-expand-lg fixed-top bg-black mb-5">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand text-white fw-bold fixed"
+          href="#inicio"
+          style="font-size: 1.5rem; text-shadow: 5px 3px 3px black"
+        >
+          Catálogo de Combos
+        </a>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarLiquors"
+          aria-controls="navbarLiquors"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarLiquors">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+              <a class="nav-link text-white" href="#" id="Anisado">Anisado</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#" id="Vodka">Vodka</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#" id="Ron">Ron</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#" id="Pisco">Pisco</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#" id="Whiskey">Whiskey</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link text-white" href="#" id="Jagger">Jagger</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container pt-5 pt-lg-0 mt-5 mt-lg-0">
+      <!-- Aquí se cargarán las tarjetas -->
+      <div class="row row-cols-1 row-cols-md-3 g-4"></div>
+
+      <div class="container mt-5"></div>
+    </div>
+
+    <!-- Bootstrap JS bundle (incluye Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
